@@ -71,7 +71,7 @@ const router = createBrowserRouter([
     path: "/combine",
     element: <CombineHarvestors/>
   }
-]);
+], { basename: '/oxafrica/'});
 
 
 export default router
