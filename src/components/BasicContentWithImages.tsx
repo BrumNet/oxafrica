@@ -1,12 +1,17 @@
+import OXA from "../images/tractor/OXA.jpg"
+import OXB from "../images/tractor/OXB.jpg"
+import COMBINEA from "../images/combine_harvestors/OX5.jpeg"
+import COMBINEB from "../images/combine_harvestors/image.jpg"
+
 export const BasicContentWithImages = (props: { equipment: string; }) => {
     const FirstParagraph = props.equipment === "tractor" ? TractorFirstParagraph : CombineHarvestorsFirstParagraph;
     const SecondParagraph = props.equipment === "tractor" ? TractorSecondParagraph : CombineHarvestorsSecondParagraph;
 
     return (
         <div style={{width: "80%", marginLeft: "10%"}}>
-            <div className="first_image"><img src={props.equipment === "tractor" ? "/src/images/tractor/OXB.jpg" : "/src/images/combine_harvestors/OX5.jpeg"}/></div>
+            <div className="first_image"><img src={props.equipment === "tractor" ? OXB : COMBINEA}/></div>
             <FirstParagraph/>
-            <div className="second_image"><img src={props.equipment === "tractor" ? "/src/images/tractor/OXA.jpg" : "/src/images/combine_harvestors/image.jpg"}/></div>
+            <div className="second_image"><img src={props.equipment === "tractor" ? OXA : COMBINEB}/></div>
             <SecondParagraph/>
         </div>
     )

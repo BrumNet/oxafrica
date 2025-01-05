@@ -3,6 +3,7 @@ import { BreadCrumb } from "../components/BreadCrumb"
 import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
 import { HeroImage2 } from "../components/HeroImage2"
+import cattleLive from "../images/livestock/cattleLive.jpg"
 
 export const CattleGoat = () => {
     const heading = "Goat Housing System Cattle Housing System."
@@ -10,7 +11,7 @@ export const CattleGoat = () => {
     return (
             <>
                 <Header/>
-                <HeroImage2 url={"url('/src/images/livestock/cattleLive.jpg')"}/>
+                <HeroImage2 url={cattleLive}/>
                 <BreadCrumb target={"Cattle and Goat"}/>
                 <BasicContent heading={heading} content={content} bullet={true}/>
                 <Footer/>

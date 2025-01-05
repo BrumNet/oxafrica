@@ -5,6 +5,8 @@ import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
 import { HeroContainer } from "../components/HeroContainer"
 import { HeroImage2 } from "../components/HeroImage2"
+import poultryhero from "../images/poultry/poultry_hero_2.jpg"
+import breedinghouse from "../images/poultry/breedinghouse_2.jpg"
 
 export const Poultry = () => {
     const headings = ["Prefabricated Steel Poultry Farm House Design and Construction","Why you choose OX", "The Poultry house equipments composed of :", "We also can provide you overvalue services: ( one -stop service for poultry farm needs )"]
@@ -17,9 +19,9 @@ export const Poultry = () => {
     return (
             <>
                 <Header/>
-                <HeroImage2 url={"url('/src/images/poultry/poultry_hero_2.jpg')"}/>
+                <HeroImage2 url={poultryhero}/>
                 <BreadCrumb target={"Poultry"}/>
-                <HeroContainer image={"url('/src/images/poultry/breedinghouse_2.jpg')"}/>
+                <HeroContainer image={breedinghouse}/>
                 <BasicContent heading={headings[0]} content={content[0]} bullet={false}/>
                 <BasicContent heading={headings[1]} content={content[1]} bullet={false}/>
                 <BasicContent2 heading={headings[2]} bulletin={content[2]}/>

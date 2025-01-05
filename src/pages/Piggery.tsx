@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
 import { HeroContainer } from "../components/HeroContainer"
 import { HeroImage2 } from "../components/HeroImage2"
+import pigfarm from "../images/piggery/animal_pig_farm.webp"
 
 export const Piggery = () => {
     const heading = "Complete pig farm solutions"
@@ -11,9 +12,9 @@ export const Piggery = () => {
     return (
             <>
                 <Header/>
-                <HeroImage2 url={"url('/src/images/piggery/animal_pig_farm.webp')"}/>
+                <HeroImage2 url={pigfarm}/>
                 <BreadCrumb target={"Piggery"}/>
-                <HeroContainer image={"url('/src/images/piggery/animal_pig_farm.webp')"}/>
+                <HeroContainer image={pigfarm}/>
                 <BasicContent heading={heading} content={content} bullet={false}/>
                 <Footer/>
             </>
