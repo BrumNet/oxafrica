@@ -4,7 +4,7 @@ export const Header = () => {
     // }
     return (
         <div id="nav">
- 			<div id="logo" onClick={() => window.location.href='/'}></div>
+ 			<div id="logo" onClick={() => window.location.href='/oxafrica'}></div>
  			<div id="mini">
                 {/* <!-- onClick="getElementById('nav_grid').style.display = 'block'"--> */}
 					<span>
@@ -14,7 +14,7 @@ export const Header = () => {
  			<div id="nav_grid">
  				<div>
  					<ul>
- 					<li className="big_nav_link" onClick={() => window.location.href='/'}>Home</li> 
+ 					<li className="big_nav_link" onClick={() => window.location.href='/oxafrica'}>Home</li> 
  					<li className="big_nav_link">Products
 						<div className="dropdown">
 				            <span id ="prod"><a  href=''>All Products</a>

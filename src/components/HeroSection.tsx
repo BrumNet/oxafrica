@@ -1,30 +1,32 @@
+import { Link } from "react-router-dom"
+
 export const ToolSection = () => {
     return (
         <div id="tool_section">
         <div id="tool_menu">
             <div className="flex_tools">
-                <a href="tractor"><div id="tractor"></div></a>
-                <center onClick={() => window.location.href='/tractor'}>Tractors</center>
+                <Link to="tractor"><div id="tractor"></div>
+                <center>Tractors</center></Link>
             </div>
             <div className="flex_tools">
-                <a href="combine"><div id="combineH"></div></a>
-                <center onClick={() => window.location.href='/combine'}>Combine Harvestors</center>
+                <Link to="combine"><div id="combineH"></div>
+                <center>Combine Harvestors</center></Link>
             </div>
             <div className="flex_tools">
-                <a  href="comingsoon"><div id="implement"></div></a>
-                <center onClick={() => window.location.href='/comingsoon'}>Implement</center>
+                <Link  to="comingsoon"><div id="implement"></div>
+                <center>Implement</center></Link>
             </div>
             <div className="flex_tools">
-                <a  href="livestock"><div id="livestock"></div></a>
-                <center onClick={() => window.location.href='/livestock'}>LiveStock</center>
+                <Link to="/livestock"><div id="livestock"></div>
+                <center>LiveStock</center></Link>
             </div>
             <div className="flex_tools">
-                <a  href="irrigation"><div id="irrigation"></div></a>
-                <center onClick={() => window.location.href='/irrigation'}>Irrigation</center>
+                <Link  to="irrigation"><div id="irrigation"></div>
+                <center>Irrigation</center></Link>
             </div>
             <div className="flex_tools">
-                <a href="steelstructures"><div id="steelstructures"></div></a>
-                <center onClick={() => window.location.href='/steelstructures'}>Steel Structures</center>
+                <Link to="steelstructures"><div id="steelstructures"></div>
+                <center>Steel Structures</center></Link>
             </div>
         </div>
         
